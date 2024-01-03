@@ -60,3 +60,14 @@ Task scritta numero7
 Task scritta numero8
 Task scritta numero9
 Task scritta numero10
+Task scritta numero0
+Task scritta numero1
+Task scritta numero2
+Task scritta numero3
+Task scritta numero4
+Task scritta numero5
+Task scritta numero6
+Task scritta numero7
+Task scritta numero8
+Task scritta numero9
+Task scritta numero10
