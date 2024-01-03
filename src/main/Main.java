@@ -13,6 +13,7 @@ public class Main {
         int nThread = 5;
 
         long startTime = System.currentTimeMillis();
+        System.out.println(startTime);
 
         FileReaderTask fileReaderTask = new FileReaderTask();
         int numberLines = fileReaderTask.getNumberLines(path);
@@ -49,7 +50,7 @@ public class Main {
 
         long endTime = System.currentTimeMillis();
 
-        long elapsedTime = startTime - endTime;
+        long elapsedTime = endTime - startTime;
         System.out.println("------------------------------------------------------------------------------");
         System.out.println("Tempo impiegato per la lettura del file : " + elapsedTime);
 
@@ -72,7 +73,7 @@ public class Main {
         }
 
         long endTime2 = System.currentTimeMillis();
-        long elapsedTime2 = startTime2 - endTime2;
+        long elapsedTime2 = endTime2 - startTime2;
 
         System.out.println("------------------------------------------------------------------------------");
         System.out.println("Tempo impiegato per la scrittura del file : " + elapsedTime2);
