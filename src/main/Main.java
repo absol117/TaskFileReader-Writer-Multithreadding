@@ -13,7 +13,6 @@ public class Main {
         int nThread = 5;
 
         long startTime = System.currentTimeMillis();
-        System.out.println(startTime);
 
         FileReaderTask fileReaderTask = new FileReaderTask();
         int numberLines = fileReaderTask.getNumberLines(path);
@@ -64,6 +63,8 @@ public class Main {
 
         FileWriterTask fileWriterTask = new FileWriterTask(path, worldsToWrite);
 
+
+        // forse bastava un Runnable
         Future<Void> submit = executorService.submit(fileWriterTask);
 
         try {
@@ -85,6 +86,5 @@ public class Main {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
     }
 }
